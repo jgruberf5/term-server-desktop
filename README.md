@@ -28,13 +28,13 @@ You can either build a docker image locally:
 git clone https://github.com/jgruberf5/term-server-desktop.git
 cd term-server-desktop
 docker build --name term-server-desktop:latest .
-docker run -d --rm -p 3389:3389 -p 2222:22 term-server-desktop:lastest
+docker run -d --rm -p 3389:3389 -p 2222:22 term-server-desktop:latest
 ```
 
 or use the `jgruberf5/term-server-desktop:latest` image from dockerhub:
 
 ```bash
-docker run -d --rm -p 3389:3389 -p 2222:22 jgruberf5/term-server-desktop:lastest
+docker run -d --rm -p 3389:3389 -p 2222:22 jgruberf5/term-server-desktop:latest
 ```
 
 They connect with your RDP client to `localhost:3389`. The username is `demo` and whatever you set your demo user password to in the Dockerfile. (Hint: default is DEMOPASSWORD).
