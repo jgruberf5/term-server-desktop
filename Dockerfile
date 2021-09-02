@@ -106,8 +106,9 @@ COPY --from=builder /tmp/so/module-xrdp-sink.so /var/lib/xrdp-pulseaudio-install
 ADD bin /usr/bin
 ADD etc /etc
 
-RUN sed -i 's/google-chrome-stable/google-chrome-stable --no-sandbox/g' /usr/share/applications/google-chrome.desktop
-RUN sed -i 's/\/usr\/share\/code\/code/\/usr\/share\/code\/code --no-sandbox/g' /usr/share/applications/code.desktop
+# Added capabilities to the READ doc
+#RUN sed -i 's/google-chrome-stable/google-chrome-stable --no-sandbox/g' /usr/share/applications/google-chrome.desktop
+#RUN sed -i 's/\/usr\/share\/code\/code/\/usr\/share\/code\/code --no-sandbox/g' /usr/share/applications/code.desktop
 
 # Configure
 RUN mkdir /var/run/dbus && \
