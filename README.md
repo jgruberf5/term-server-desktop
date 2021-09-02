@@ -1,5 +1,10 @@
 # term-server-desktop
+
 A remote terminal server linux desktop for cloudinit or docker container
+
+![Login Screen](./assets/login-screen.jpg)
+
+![Desktop](./assets/desktop.png)
 
 ## Running term-server-desktop as a Virtual Machine
 
